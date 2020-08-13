@@ -4,7 +4,7 @@ module FormsLab
   class App < Sinatra::Base
 
     get '/' do
-      "Welcome to the Nested Forms Lab!"
+      erb :root
     end
 
     get '/new' do 
@@ -14,8 +14,8 @@ module FormsLab
     post '/pirates' do
       @pirate = Pirate.new(params[:pirate])
 
-      params[:pirate][:ships].each do |detail|
-        Ship.new(detail)
+      params[:pirate][:ships].each do |details|
+        Ship.new(details)
       end
 
       @ships = Ship.all

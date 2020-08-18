@@ -3,9 +3,11 @@ class Ship
     @@all = []
 
     def initialize(params)
-        @name = params[:ships][][:name]
-        @type = params[:ships][][:type]
-        @booty = params[:ships][][:booty]
+      # binding.pry
+        @name = params[:name]
+        @type = params[:type]
+        @booty = params[:booty]
+        self.class.all << self
     end
 
     def self.all

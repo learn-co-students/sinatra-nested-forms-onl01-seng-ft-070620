@@ -14,6 +14,3 @@ class Pirate
     end
 end
 
-# Pirates should have a name, weight, and height.
-
-# .all

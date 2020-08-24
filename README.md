@@ -4,7 +4,7 @@
 
 In this lab, you'll practice using nested forms in Sinatra.
 
-## Instructions
+## Instructions 
 
 Note: YOU DO NOT NEED A DATABASE, since we just need to keep track of the form's input long enough to display it, and not persist it.  We don't expect the pirate to be there the next time we come to their URL, but it'd be cool if they were.
 
